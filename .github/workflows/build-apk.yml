@@ -18,6 +18,9 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      - name: Generate Gradle Wrapper
+        run: gradle wrapper --gradle-version 8.9
+
       - name: Make Gradle wrapper executable
         run: chmod +x gradlew
 
