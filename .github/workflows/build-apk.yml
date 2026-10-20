@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: AuroraTV_V2
+        working-directory: AuroraTV_GitHub_Repo
     steps:
       - uses: actions/checkout@v4
 
@@ -29,7 +29,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-          build-root-directory: AuroraTV_V2
+          build-root-directory: AuroraTV_GitHub_Repo
 
       - name: Build Debug APK
         run: ./gradlew :app:assembleDebug
@@ -37,4 +37,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: aurora-tv-debug-apk
-          path: AuroraTV_V2/app/build/outputs/apk/debug/app-debug.apk
+          path: AuroraTV_GitHub_Repo/app/build/outputs/apk/debug/app-debug.apk
