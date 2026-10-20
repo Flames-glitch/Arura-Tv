@@ -1,0 +1,8 @@
+<resources>
+    <style name="AuroraTheme" parent="android:style/Theme.Holo.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">#070B17</item>
+        <item name="android:colorAccent">#9CB4FF</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>
